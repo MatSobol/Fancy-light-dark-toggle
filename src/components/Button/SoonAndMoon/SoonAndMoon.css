@@ -1,0 +1,106 @@
+.sun-and-moon {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 88%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    4px 7px 8px 0px rgba(0, 0, 0, 0.25);
+  transition: left 300ms ease-out;
+}
+
+.moving {
+  transition: left var(--long-transform-duration) ease-out,
+    transform var(--long-transform-duration) ease-out;
+}
+
+.sun {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eccd2d;
+  box-shadow: inset 0px -5px 4px 0px #82851f,
+    inset 3px 4px 4px 0px rgba(255, 255, 255, 0.6);
+}
+
+.moon {
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #c9c9c9;
+  box-shadow: inset 0px -5px 4px 0px #6c6c6c,
+    inset 3px 4px 4px 0px rgba(255, 255, 255, 0.6);
+  transition: left var(--long-transform-duration) ease-out;
+}
+
+.moon-spot {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #889399;
+}
+
+.moon-spot:nth-child(1) {
+  width: 33%;
+  height: 33%;
+  left: 21%;
+  top: 44%;
+}
+.moon-spot:nth-child(2) {
+  width: 20%;
+  height: 20%;
+  left: 66%;
+  top: 50%;
+}
+.moon-spot:nth-child(3) {
+  width: 13%;
+  height: 13%;
+  left: 41%;
+  top: 20%;
+}
+
+.ray {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(225, 255, 255, 0.1);
+}
+
+.ray:nth-child(1) {
+  width: 300%;
+  height: 300%;
+}
+.ray:nth-child(2) {
+  width: 227%;
+  height: 227%;
+}
+.ray:nth-child(3) {
+  width: 160%;
+  height: 160%;
+}
+
+.invisible-input:focus-visible ~ .sun-and-moon,
+.button-container:hover .sun-and-moon {
+  left: 8%;
+}
+
+.invisible-input:checked ~ .sun-and-moon {
+  left: 97%;
+  transform: translate(-100%, -50%);
+}
+
+.invisible-input:checked ~ .sun-and-moon .sun .moon {
+  left: 0%;
+}
+
+.button-container:has(.invisible-input:checked):hover .sun-and-moon,
+.button-container:has(.invisible-input:checked:focus-visible) .sun-and-moon {
+  left: 92%;
+}

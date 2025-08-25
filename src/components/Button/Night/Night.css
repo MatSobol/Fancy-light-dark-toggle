@@ -1,0 +1,12 @@
+.night-container {
+  position: absolute;
+  top: -120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: top var(--long-transform-duration) ease-out;
+}
+
+.invisible-input:checked ~ .night-container {
+  top: 0%;
+}
