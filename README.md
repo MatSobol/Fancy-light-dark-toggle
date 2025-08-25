@@ -1,6 +1,6 @@
 The project is based on this Figma design: [Figma Project](https://www.figma.com/community/file/1293910475100399964)
 
-Project demo: [Demo]([https://www.figma.com/community/file/1293910475100399964](https://codesandbox.io/p/sandbox/lrj8nn))
+Project demo: [Demo](https://codesandbox.io/p/sandbox/lrj8nn)
 
 <img width="403" height="181" alt="image" src="https://github.com/user-attachments/assets/8e76e880-23cd-42d7-8116-6a461c029182" />
 
