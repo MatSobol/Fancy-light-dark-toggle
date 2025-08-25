@@ -1,7 +1,7 @@
 import "./Button.css";
 
 import { useState } from "react";
-import { SoonAndMoon } from "./SoonAndMoon";
+import { SunAndMoon } from "./SunAndMoon";
 import { Night } from "./Night";
 import { Day } from "./Day";
 
@@ -27,7 +27,7 @@ export const Button = () => {
       />
       <Night />
       <Day />
-      <SoonAndMoon isMoving={isMoving} setIsMoving={setIsMoving} />
+      <SunAndMoon isMoving={isMoving} setIsMoving={setIsMoving} />
     </div>
   );
 };

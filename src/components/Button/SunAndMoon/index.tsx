@@ -20,7 +20,7 @@ const Moon = () => {
   );
 };
 
-export const SoonAndMoon = ({
+export const SunAndMoon = ({
   isMoving,
   setIsMoving,
 }: {
